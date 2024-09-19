@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resposive Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Application Form</header>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label for="">Full Name</label>
+          <input type="text" placeholder="Enter Name" required />
+        </div>
+        <div class="input-box">
+          <label for="">Email</label>
+          <input type="text" placeholder="Enter Email" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label for="">Mobile Number</label>
+            <input type="number" placeholder="Enter Mobile Number" required />
+          </div>
+          <div class="input-box">
+            <label for="">Birth Date</label>
+            <input type="date" placeholder="Enter Birth Date" required />
+          </div>
+        </div>
+
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="pick-male" name="gender" checked />
+              <label for="pick-male">Male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="pick-female" name="gender" />
+              <label for="pick-female">Female</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="pick-others" name="gender" />
+              <label for="pick-others">Prefer not to say</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label for="">Address</label>
+          <input type="text" placeholder="Enter your address" required />
+          <input type="text" placeholder="Enter addess line 2" required />
+          <div class="column">
+            <div class="select-box">
+              <select name="" id="">
+                <option value="">Continent</option>
+                <option value="">Africa</option>
+                <option value="">Asia</option>
+                <option value="">Antartica</option>
+                <option value="">Australia</option>
+                <option value="">Europe</option>
+                <option value="">North America</option>
+                <option value="">South America</option>
+              </select>
+            </div>
+            <input type="text" placeholder="Enter your city" required />
+          </div>
+          <div class="column">
+            <input type="text" placeholder="Enter your region" required />
+            <input type="number" placeholder="Enter Postal/ZIP Code" required />
+          </div>
+        </div>
+        <button class="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
